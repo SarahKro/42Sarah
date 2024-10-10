@@ -11,12 +11,12 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "ft_printf_putchar.c"
+/* #include "ft_printf_putchar.c"
 #include "ft_printf_puthex.c"
 #include "ft_printf_putint.c"
 #include "ft_printf_putstr.c"
 #include "ft_printf_putuint.c"
-#include "ft_printf_putptr.c"
+#include "ft_printf_putptr.c" */
 
 static void	ft_sort(char c, va_list arg, int *count)
 {
@@ -70,13 +70,13 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-
+/* 
 #include <stdio.h>
 #include <limits.h>
 
 int	main(void)
 {
-	/* int				i;
+	int				i;
 	int				count;
 	int             countreal;
 	void			*ptr;
@@ -99,7 +99,7 @@ int	main(void)
 	countreal = printf("Hell%c my %s is: %p!\nI'm
 			%dkm from the sun. \nThat's 10%% of %ukm.\n%X %x.\n", 'o', str, ptr,
 			sun, km, hex1, hex2);
-	printf("\nmy counter: %d\nreal counter: %d", count, countreal); */
+	printf("\nmy counter: %d\nreal counter: %d", count, countreal);
 	printf("\n%p  ", "");
 	printf("%p  ", NULL);
 	printf("%p  ", (void *)-14523);
@@ -113,4 +113,4 @@ int	main(void)
 	ft_printf("%pp%p%p\n  ", (void *)LONG_MAX + 423856, (void *)0, (void *)INT_MAX);
 
 	return (0);
-}
+} */
