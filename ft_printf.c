@@ -70,12 +70,14 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-/* 
+
 #include <stdio.h>
 #include <limits.h>
 
-int	main(void)
+/* int	main(void)
 {
+	ft_printf("%d",2800000000);
+	printf("%d",(int)2800000000);
 	int				i;
 	int				count;
 	int             countreal;
@@ -112,5 +114,8 @@ int	main(void)
 	ft_printf("0x%p-  ", (void *)ULONG_MAX);
 	ft_printf("%pp%p%p\n  ", (void *)LONG_MAX + 423856, (void *)0, (void *)INT_MAX);
 
+	printf(" NULL %s NULL \n", NULL);
+	ft_printf(" NULL %s NULL \n", NULL);
+ 
 	return (0);
 } */

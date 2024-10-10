@@ -30,6 +30,7 @@ void	ft_printf_putptr(unsigned long nbr, int *count)
 	if (!nbr)
 	{
 		write(1, "(nil)", 5);
+		*count += 5;
 		return ;
 	}
 	write(1, "0x", 2);
