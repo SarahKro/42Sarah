@@ -14,6 +14,12 @@
 
 void	ft_printf_putstr(char *str, int *count)
 {
+	if (!str)
+	{
+		write(1, "(null)", 6);
+		*count += 6;
+		return ;
+	}
 	while (*str)
 	{
 		write(1, &(*str), 1);
